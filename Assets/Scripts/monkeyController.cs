@@ -24,4 +24,8 @@ public class monkeyController : MonoBehaviour
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, playerPos.position, step);
     }
+
+    public void EnemyDeath() {
+        GameObject.Destroy(this.gameObject);
+    }
 }
